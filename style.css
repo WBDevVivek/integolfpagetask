@@ -1,0 +1,137 @@
+* {
+    /* color: red; */
+}
+
+p {
+    color: #3c4143;
+}
+
+.mainLayout {
+    min-height: 100vh;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+.container {
+    max-width: 1232px;
+    font-size: 1rem;
+    /* border: 5px solid red; */
+}
+
+.headerWrapper {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(255 255 255);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+
+.pageHero {
+    background-image: url(img/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1536px) {
+
+    .container {
+        max-width: 1536px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .container {
+        max-width: 1280px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+.container {
+    max-width: 1024px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 640px) {
+
+    .container {
+        max-width: 640px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+
+.headerWrapper nav {
+    flex: 1 1 0%;
+}
+
+
+.footerWrapper .footerTop nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+
+.footerWrapper .footerTop nav ._navItem {
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: rgb(20 22 22 );
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.footerWrapper .footerTop ._social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.25rem;
+}
+
+.footerWrapper .footerTop ._social>button {
+    color: rgb(123 123 123 );
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.footerWrapper .footerBottom {
+    border-top-width: 1px;
+    border-color: rgb(230 230 230 );
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+
+@media (min-width: 1024px) {
+
+    .headerWrapper nav {
+        order: 1;
+    }
+}
